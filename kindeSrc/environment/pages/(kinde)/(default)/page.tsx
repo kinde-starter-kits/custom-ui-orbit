@@ -17,6 +17,7 @@ const styles: {
   description: React.CSSProperties;
   logo: React.CSSProperties;
   logoWrapper: React.CSSProperties;
+  imageHeader: React.CSSProperties;
 } = {
   container: {
     minHeight: "100vh",
@@ -54,11 +55,18 @@ const styles: {
   logo: {
     width: "115.5px",
   },
+  imageHeader: {
+    height: "200px",
+    background:
+      "url(https://asset.kindedemo.com/orbit/aac433a14500955ae1c8641e71da2076.jpeg) no-repeat center center",
+    backgroundSize: "cover",
+  },
 };
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
+      <div style={styles.imageHeader}></div>
       <div style={styles.container}>
         <main style={styles.loginForm}>
           <div style={styles.logoWrapper}>
