@@ -64,11 +64,14 @@ export const generateCSSVariables = (): string => `
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
     padding: 1.5rem;
   }
 
   .terms {
     display: flex;
+    justify-content: center;
     gap: 1rem;
   }
 
