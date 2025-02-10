@@ -28,7 +28,6 @@ export const generateCSSVariables = (): string => `
     --kinde-control-label-color: #fff;
     --kinde-button-font-weight: 700;
     --kinde-control-select-text-border-color: #636363;
-
   }
 
   [data-kinde-control-label] {
