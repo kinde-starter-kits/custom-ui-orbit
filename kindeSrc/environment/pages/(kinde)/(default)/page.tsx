@@ -23,7 +23,6 @@ const styles: {
     background: "#000",
     color: "#fff",
   },
-
   loginForm: {
     maxWidth: "400px",
     width: "100%",
@@ -59,8 +58,8 @@ const styles: {
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Layout context={context} request={request}>
-      <div className="image-header"></div>
       <div style={styles.container}>
+        <div className="image-header"></div>
         <main style={styles.loginForm}>
           <div style={styles.logoWrapper}>
             <img style={styles.logo} src={getLogoUrl()} />

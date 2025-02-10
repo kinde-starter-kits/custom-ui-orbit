@@ -100,6 +100,7 @@ export const generateCSSVariables = (): string => `
   @media (min-width: 768px) { 
     .image-header {
       height: 200px;
+      margin-bottom: 1.5rem;
     }
 
     .footer {
