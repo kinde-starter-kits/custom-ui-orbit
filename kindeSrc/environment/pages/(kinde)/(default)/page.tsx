@@ -1,6 +1,10 @@
 "use server";
 
-import { getKindeWidget, type KindePageEvent } from "@kinde/infrastructure";
+import {
+  getKindeWidget,
+  getLogoUrl,
+  type KindePageEvent,
+} from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
@@ -19,7 +23,7 @@ const styles: {
   },
 
   loginForm: {
-    minWidth: "400px",
+    maxWidth: "400px",
     width: "100%",
     margin: "0 auto",
     padding: "1rem",
@@ -41,6 +45,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <main style={styles.loginForm}>
+          <img src={getLogoUrl()} />
           <div>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
             <p style={styles.description}>
