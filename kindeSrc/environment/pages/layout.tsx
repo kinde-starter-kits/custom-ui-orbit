@@ -25,7 +25,7 @@ export const Layout = ({
           {`
           @font-face {
             fontFamily: SF Pro;
-            src: url(s3://asset.kindedemo.com/orbit/SF-Pro.ttf)
+            src: url(https://asset.kindedemo.com/orbit/SF-Pro.ttf)
           }
             
           .sf-pro {
