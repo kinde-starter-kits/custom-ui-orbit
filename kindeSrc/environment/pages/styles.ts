@@ -30,5 +30,8 @@ export const generateCSSVariables = (): string => `
 
   }
 
+  [data-kinde-control-label] {
+    font-weight: 600;
+  }
 
 `;
