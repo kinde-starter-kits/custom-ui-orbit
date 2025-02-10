@@ -3,12 +3,12 @@ const kindeVariables = {
   baseFontFamily:
     "-apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, Segoe UI, Roboto, sans-serif",
   controlSelectTextBorderRadius: "99px",
-  buttonPrimaryBackgroundColor: "dodgerblue",
-  buttonPrimaryColor: "#fff",
+  buttonPrimaryBackgroundColor: "#C1AFEF",
+  buttonPrimaryColor: "#000",
   buttonBorderRadius: "99px",
-  buttonSecondaryBackgroundColor: "#fff",
+  buttonSecondaryBackgroundColor: "#2B2B2B",
   buttonSecondaryBorderWidth: "1px",
-  buttonSecondaryBorderColor: "#e9edec",
+  buttonSecondaryBorderColor: "#2B2B2B",
   buttonSecondaryBorderStyle: "solid",
   buttonSecondaryBorderRadius: "99px",
 } as const;
@@ -25,19 +25,11 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-color: ${kindeVariables.buttonSecondaryBorderColor};
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
+    --kinde-control-label-color: #fff;
   }
 
   [data-kinde-choice-separator] {
     text-transform: uppercase;
   }
 
-  [data-kinde-layout-auth-buttons] { 
-    display: flex;
-    justify-content: center;
-  }
-
-  [data-kinde-layout-auth-buttons-item] {
-    width: 3rem;
-    height: 3rem;
-  }
 `;
