@@ -13,7 +13,7 @@ const styles: {
 } = {
   container: {
     display: "flex",
-    height: "100vh",
+    minHeight: "100vh",
     background: "#000",
     color: "#fff",
   },
@@ -40,7 +40,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <main style={styles.loginForm}>
-          <div style={{ padding: "2rem" }}>
+          <div>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
             <p style={styles.description}>
               {context.widget.content.description}
