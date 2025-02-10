@@ -90,4 +90,22 @@ export const generateCSSVariables = (): string => `
     color: #fff;
     text-decoration: none;
   }
+
+  .image-header {
+    height: 150px;
+    background: url(https://asset.kindedemo.com/orbit/aac433a14500955ae1c8641e71da2076.jpeg) no-repeat center center;
+    background-size: cover;
+  }
+
+  @media (min-width: 768px) { 
+    .image-header {
+      height: 200px;
+    }
+
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+  }
 `;
