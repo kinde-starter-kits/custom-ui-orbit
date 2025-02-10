@@ -34,6 +34,7 @@ const styles: {
     justifyContent: "center",
   },
   heading: {
+    alignSelf: "stretch",
     color: "var(--Basic-White, #FFF)",
     fontSize: "32px",
     fontStyle: "normal",
