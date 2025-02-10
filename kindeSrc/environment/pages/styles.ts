@@ -26,10 +26,9 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
     --kinde-control-label-color: #fff;
+    --kinde-button-font-weight: 600;
+
   }
 
-  [data-kinde-choice-separator] {
-    text-transform: uppercase;
-  }
 
 `;
