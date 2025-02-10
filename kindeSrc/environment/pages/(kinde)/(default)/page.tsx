@@ -20,8 +20,9 @@ const styles: {
 
   loginForm: {
     minWidth: "400px",
+    width: "100%",
     margin: "0 auto",
-    minInlineSize: "1rem",
+    padding: "1rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
