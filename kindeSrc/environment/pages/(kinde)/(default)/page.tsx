@@ -16,13 +16,7 @@ const styles: {
     display: "flex",
     height: "100vh",
   },
-  sidePanel: {
-    borderRadius: "1rem",
-    backgroundColor: "dodgerblue",
-    flex: 1,
-    margin: "0.5rem",
-    maxWidth: "1024px",
-  },
+
   loginForm: {
     minWidth: "400px",
     margin: "0 auto",
@@ -53,7 +47,6 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
-        <div style={styles.sidePanel}></div>
       </div>
     </Layout>
   );
