@@ -50,7 +50,7 @@ const styles: {
     marginBottom: "1.5rem",
   },
   logo: {
-    width: "69px",
+    width: "115.5px",
   },
 };
 
