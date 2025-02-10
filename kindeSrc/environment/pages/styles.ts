@@ -46,7 +46,7 @@ export const generateCSSVariables = (): string => `
     width: 100%;
   }
 
-  [data-kinde-button-text] {
+  [data-kinde-layout-auth-buttons] [data-kinde-button-text] {
     display: none;
   }
 `;
