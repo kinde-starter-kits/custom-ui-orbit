@@ -19,7 +19,6 @@ const styles: {
   logoWrapper: React.CSSProperties;
 } = {
   container: {
-    display: "flex",
     minHeight: "100vh",
     background: "#000",
     color: "#fff",

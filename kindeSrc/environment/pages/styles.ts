@@ -74,5 +74,7 @@ export const generateCSSVariables = (): string => `
 
   .footer a {
     font-weight: 700;
+    color: #fff;
+    text-decoration: none;
   }
 `;
