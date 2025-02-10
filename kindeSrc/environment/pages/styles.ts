@@ -14,6 +14,11 @@ const kindeVariables = {
 } as const;
 
 export const generateCSSVariables = (): string => `
+  @font-face {
+    font-family: SF Pro;
+    src: url(https://asset.kindedemo.com/orbit/SF-Pro.ttf);
+  }
+
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
     --kinde-control-select-text-border-radius: ${kindeVariables.controlSelectTextBorderRadius};
