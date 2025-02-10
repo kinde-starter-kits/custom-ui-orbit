@@ -22,6 +22,9 @@ const styles: {
     minHeight: "100vh",
     background: "#000",
     color: "#fff",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   loginForm: {
     maxWidth: "400px",
