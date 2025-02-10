@@ -38,4 +38,15 @@ export const generateCSSVariables = (): string => `
     color: #ABABAB;
   }
 
+  [data-kinde-layout-auth-buttons] {
+    display: flex;
+  }
+
+  [data-kinde-layout-auth-buttons-item] {
+    width: 100%;
+  }
+
+  [data-kinde-button-text] {
+    display: none;
+  }
 `;
