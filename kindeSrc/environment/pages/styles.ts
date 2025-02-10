@@ -34,4 +34,8 @@ export const generateCSSVariables = (): string => `
     font-weight: 700;
   }
 
+  [data-kinde-choice-separator] { 
+    color: #ABABAB;
+  }
+
 `;

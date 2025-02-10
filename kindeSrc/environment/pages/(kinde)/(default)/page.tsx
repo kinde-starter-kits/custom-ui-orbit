@@ -32,8 +32,13 @@ const styles: {
     justifyContent: "center",
   },
   heading: {
-    fontWeight: "600",
-    fontSize: "2rem",
+    color: "var(--Basic-White, #FFF)",
+    fontFamily: "SF Pro",
+    fontSize: "32px",
+    fontStyle: "normal",
+    fontWeight: 650,
+    lineHeight: "32px" /* 100% */,
+    letterSpacing: "-0.64px",
   },
   description: {
     marginBottom: "1.5rem",
