@@ -41,6 +41,7 @@ const styles: {
     fontWeight: 650,
     lineHeight: "32px" /* 100% */,
     letterSpacing: "-0.64px",
+    fontFamily: "SF Pro Expanded Semibold",
   },
   description: {
     marginBottom: "1.5rem",
