@@ -50,4 +50,29 @@ export const generateCSSVariables = (): string => `
   [data-kinde-layout-auth-buttons] [data-kinde-button-text] {
     display: none;
   }
+
+  .kinde-branding a {
+    color: #fff;
+  }
+
+  [data-kinde-fallback-action] {
+    display: none;
+  }
+
+  .footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .terms {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer a {
+    font-weight: 700;
+  }
 `;

@@ -1,6 +1,7 @@
 "use server";
 
 import {
+  getKindeSignInUrl,
   getKindeWidget,
   getLogoUrl,
   type KindePageEvent,
@@ -70,6 +71,15 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
+        <div className="footer">
+          <div>
+            No account? <a href={getKindeSignInUrl()}>Create one</a>
+          </div>
+          <div className="terms">
+            <a href="https://www.kinde.com">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
       </div>
     </Layout>
   );
