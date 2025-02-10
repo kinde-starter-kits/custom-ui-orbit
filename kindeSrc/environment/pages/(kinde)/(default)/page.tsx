@@ -47,7 +47,7 @@ const styles: {
   logoWrapper: {
     display: "flex",
     justifyContent: "center",
-    marginBottom: "1.5rem",
+    marginBottom: "3rem",
   },
   logo: {
     width: "115.5px",

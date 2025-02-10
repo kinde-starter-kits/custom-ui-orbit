@@ -27,6 +27,7 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
     --kinde-control-label-color: #fff;
     --kinde-button-font-weight: 700;
+    --kinde-control-select-text-border-color: #636363;
 
   }
 
