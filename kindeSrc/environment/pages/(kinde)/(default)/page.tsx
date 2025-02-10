@@ -59,7 +59,9 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
     <Layout context={context} request={request}>
       <div style={styles.container}>
         <main style={styles.loginForm}>
-          <img style={styles.logo} src={getLogoUrl()} />
+          <div style={styles.logoWrapper}>
+            <img style={styles.logo} src={getLogoUrl()} />
+          </div>
           <div>
             <h2 style={styles.heading}>{context.widget.content.heading}</h2>
             <p style={styles.description}>
