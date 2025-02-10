@@ -33,7 +33,6 @@ const styles: {
   },
   heading: {
     color: "var(--Basic-White, #FFF)",
-    fontFamily: "SF Pro Display",
     fontSize: "32px",
     fontStyle: "normal",
     fontWeight: 650,
