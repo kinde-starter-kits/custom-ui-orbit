@@ -21,8 +21,8 @@ export const generateCSSVariables = (): string => `
 
   @font-face {
     font-family: SF Pro Expanded Semibold;
-    src: url(https://asset.kindedemo.com/orbit/SF-Pro.ttf);
-    font-stretch: expanded;
+    src: url(https://asset.kindedemo.com/orbit/SF-Pro-Expanded.ttf);
+    font-weight: 600;
   }
 
   :root {
