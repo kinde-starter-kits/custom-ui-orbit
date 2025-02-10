@@ -1,7 +1,7 @@
 // CSS Variables configuration
 const kindeVariables = {
   baseFontFamily:
-    "-apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, Segoe UI, Roboto, sans-serif",
+    "SF Pro, -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, Segoe UI, Roboto, sans-serif",
   controlSelectTextBorderRadius: "99px",
   buttonPrimaryBackgroundColor: "#C1AFEF",
   buttonPrimaryColor: "#000",
@@ -26,12 +26,12 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
     --kinde-control-label-color: #fff;
-    --kinde-button-font-weight: 600;
+    --kinde-button-font-weight: 700;
 
   }
 
   [data-kinde-control-label] {
-    font-weight: 600;
+    font-weight: 700;
   }
 
 `;
