@@ -7,7 +7,6 @@ import Layout from "../../layout";
 
 const styles: {
   container: React.CSSProperties;
-  sidePanel: React.CSSProperties;
   loginForm: React.CSSProperties;
   heading: React.CSSProperties;
   description: React.CSSProperties;
@@ -15,6 +14,8 @@ const styles: {
   container: {
     display: "flex",
     height: "100vh",
+    background: "#000",
+    color: "#fff",
   },
 
   loginForm: {
