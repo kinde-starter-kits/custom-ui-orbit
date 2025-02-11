@@ -65,6 +65,10 @@ export const generateCSSVariables = (): string => `
     color: #fff;
   }
 
+  [data-kinde-fallback-action] {
+    display: none;
+  }
+
   .footer {
     color: #fff;
     display: flex;
