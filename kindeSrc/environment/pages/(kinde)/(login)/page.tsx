@@ -30,20 +30,22 @@ const styles: {
     maxWidth: "400px",
     width: "100%",
     margin: "0 auto",
-    padding: "1rem",
+    padding: "3rem",
+    borderRadius: "32px",
+    background: "rgba(0, 0, 0, 0.20)",
     display: "flex",
+    alignItems: "center",
     flexDirection: "column",
     justifyContent: "center",
   },
   heading: {
     alignSelf: "stretch",
-    color: "var(--Basic-White, #FFF)",
+    color: "#F5F5F5",
     fontSize: "32px",
     fontStyle: "normal",
-    fontWeight: 650,
+    fontWeight: 500,
     lineHeight: "32px" /* 100% */,
     letterSpacing: "-0.64px",
-    fontFamily: "SF Pro Expanded Semibold",
   },
   description: {
     marginBottom: "1.5rem",
@@ -77,15 +79,6 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
-        <div className="footer">
-          <div>
-            No account? <a href={getKindeRegisterUrl()}>Create one</a>
-          </div>
-          <div className="terms">
-            <a href="https://www.kinde.com">Terms of use</a>
-            <a href="#">Privacy Policy</a>
-          </div>
-        </div>
       </div>
     </Layout>
   );
