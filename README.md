@@ -1,8 +1,10 @@
-# 🎨 Orbit - Kinde Custom UI Starter Template
+# 🪐 Orbit - Kinde Custom UI Starter Template
 
 A fully customizable UI starter template built with React Server Components and Kinde's Custom UI feature. Design your auth flows with complete control over the UI.
 
 ## Preview
+
+View [live demo](https://orbit.kindedemo.com/auth/cx/_:nav&m:register&psid:0194eddb1d3fadcd49ec1d5b3af4e00c)
 
 ![Orbit](image.png)
 
