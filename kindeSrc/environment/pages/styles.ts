@@ -16,13 +16,15 @@ const kindeVariables = {
 export const generateCSSVariables = (): string => `
   @font-face {
     font-family: SF Pro;
-    src: url(https://asset.kindedemo.com/orbit/SF-Pro.ttf);
+    src: url(https://asset.kindedemo.com/orbit/SF-Pro.woff2) format(woff2);
+    font-display: fallback;
   }
 
   @font-face {
     font-family: SF Pro Expanded Semibold;
-    src: url(https://asset.kindedemo.com/orbit/SF-Pro-Expanded.ttf);
+    src: url(https://asset.kindedemo.com/orbit/SF-Pro-Expanded.woff2) format(woff2);
     font-weight: 600;
+    font-display: fallback;
   }
 
   :root {
