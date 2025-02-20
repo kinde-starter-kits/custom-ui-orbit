@@ -60,7 +60,12 @@ export const generateCSSVariables = (): string => `
   }
 
   [data-kinde-layout-auth-buttons] [data-kinde-button-text] {
-    display: none;
+    block-size: 1px;
+    clip-path: inset(50%);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
   }
 
   .kinde-branding a {
