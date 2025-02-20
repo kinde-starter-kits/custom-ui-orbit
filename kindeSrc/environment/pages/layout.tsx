@@ -32,7 +32,7 @@ export const Layout = ({
         <style>{generateCSSVariables()}</style>
       </head>
       <body>
-        <div data-roast-root="true">{children}</div>
+        <div data-kinde-root="true">{children}</div>
       </body>
     </html>
   );
