@@ -39,16 +39,10 @@ export const generateCSSVariables = (): string => `
     --kinde-button-secondary-border-style: ${kindeVariables.buttonSecondaryBorderStyle};
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
     --kinde-control-label-color: #fff;
+    --kinde-control-label-font-weight: 700;
     --kinde-button-font-weight: 700;
     --kinde-control-select-text-border-color: #636363;
-  }
-
-  [data-kinde-control-label] {
-    font-weight: 700;
-  }
-
-  [data-kinde-choice-separator] { 
-    color: #ABABAB;
+    --kinde-choice-separator-color: #ABABAB;
   }
 
   [data-kinde-layout-auth-buttons] {
@@ -68,12 +62,18 @@ export const generateCSSVariables = (): string => `
     white-space: nowrap;
   }
 
+
   .kinde-branding a {
     color: #fff;
   }
 
   [data-kinde-fallback-action] {
-    display: none;
+    block-size: 1px;
+    clip-path: inset(50%);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
   }
 
   .footer {
