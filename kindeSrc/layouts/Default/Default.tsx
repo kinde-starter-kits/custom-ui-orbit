@@ -22,7 +22,9 @@ const styles: {
 export const DefaultLayout = ({
   children,
 }: DefaultLayoutProps): React.JSX.Element => (
-  <div style={styles.container}>
-    <main id="main">{children}</main>
+  <div>
+    <main style={styles.container} id="main">
+      {children}
+    </main>
   </div>
 );
