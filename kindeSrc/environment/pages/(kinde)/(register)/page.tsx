@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
-import { Footer } from "@/kindeSrc/components/Footer/Footer";
+import { Footer } from "../../../../components/Footer/Footer";
 
 const styles: {
   container: React.CSSProperties;
