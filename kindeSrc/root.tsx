@@ -9,6 +9,7 @@ import {
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
+import { generateCSSVariables } from "./styles/styles";
 interface RootProps extends KindePageEvent {
   children: React.ReactNode;
 }
@@ -39,6 +40,7 @@ export const Root = ({
         <link href={getSVGFaviconUrl()} rel="icon" type="image/svg+xml" />
         {getKindeRequiredCSS()}
         {getKindeRequiredJS()}
+        <style>{generateCSSVariables()}</style>
       </head>
 
       <body>
