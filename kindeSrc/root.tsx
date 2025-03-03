@@ -9,8 +9,6 @@ import {
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
-import path from "path";
-import fs from "fs";
 
 interface RootProps extends KindePageEvent {
   children: React.ReactNode;
@@ -21,9 +19,9 @@ export const Root = ({
   context,
   request,
 }: RootProps): React.JSX.Element => {
-  const cssPath = path.resolve("./src/styles.css");
-  const css = fs.readFileSync(cssPath, "utf8");
-
+  // const cssPath = path.resolve("./src/styles.css");
+  // const css = fs.readFileSync(cssPath, "utf8");
+  const css = "hi";
   return (
     <html dir={request.locale.isRtl ? "rtl" : "ltr"} lang={request.locale.lang}>
       <head>
