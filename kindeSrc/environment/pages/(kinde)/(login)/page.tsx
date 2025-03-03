@@ -8,7 +8,7 @@ import {
 } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import Layout from "../../layout";
+import Layout from "../../../../root";
 import { Footer } from "../../../../components/Footer/Footer";
 
 const styles: {

@@ -1,14 +1,13 @@
 "use server";
 
 import {
-  getKindeSignInUrl,
   getKindeWidget,
   getLogoUrl,
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
-import Layout from "../../layout";
+import { Root } from "../../../../root";
 
 const styles: {
   container: React.CSSProperties;
@@ -60,7 +59,7 @@ const styles: {
 
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
-    <Layout context={context} request={request}>
+    <Root context={context} request={request}>
       <div style={styles.container}>
         <div className="image-header"></div>
         <main style={styles.loginForm}>
@@ -76,7 +75,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
           </div>
         </main>
       </div>
-    </Layout>
+    </Root>
   );
 };
 
