@@ -9,7 +9,6 @@ import {
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
-import { Footer } from "../../../../components/Footer/Footer";
 
 const styles: {
   container: React.CSSProperties;
@@ -76,7 +75,6 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
-        <Footer />
       </div>
     </Layout>
   );

@@ -1,3 +1,5 @@
+"use server";
+
 import { getKindeRegisterUrl, getKindeSignInUrl } from "@kinde/infrastructure";
 import React from "react";
 
