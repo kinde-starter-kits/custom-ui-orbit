@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { renderToString } from "react-dom/server.browser";
 import Layout from "../../layout";
+import { Footer } from "@/kindeSrc/components/Footer/Footer";
 
 const styles: {
   container: React.CSSProperties;
@@ -75,15 +76,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
-        <div className="footer">
-          <div>
-            Already have an account? <a href={getKindeSignInUrl()}>Sign in</a>
-          </div>
-          <div className="terms">
-            <a href="https://www.kinde.com">Terms of use</a>
-            <a href="#">Privacy Policy</a>
-          </div>
-        </div>
+        <Footer isRegisterPage={true} />
       </div>
     </Layout>
   );

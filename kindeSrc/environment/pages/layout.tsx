@@ -6,12 +6,17 @@ import {
   getKindeRequiredJS,
   type KindePageEvent,
 } from "@kinde/infrastructure";
+import path from "node:path";
+import fs from "node:fs";
 import React from "react";
 import { generateCSSVariables } from "./styles";
 
 interface LayoutProps extends KindePageEvent {
   children: React.ReactNode;
 }
+
+const cssPath = path.resolve("./src/styles.css");
+const css = fs.readFileSync(cssPath, "utf8");
 
 export const Layout = ({
   request,
@@ -30,6 +35,7 @@ export const Layout = ({
         {getKindeRequiredCSS()}
         {getKindeRequiredJS()}
         <style>{generateCSSVariables()}</style>
+        <style>{css}</style>
       </head>
       <body>
         <div data-kinde-root="true">{children}</div>
