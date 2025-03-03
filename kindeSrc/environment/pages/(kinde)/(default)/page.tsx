@@ -60,8 +60,7 @@ const styles: {
 const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
   return (
     <Root context={context} request={request}>
-      hi
-      {/* <div style={styles.container}>
+      <div style={styles.container}>
         <div className="image-header"></div>
         <main style={styles.loginForm}>
           <div style={styles.logoWrapper}>
@@ -75,7 +74,7 @@ const DefaultPage: React.FC<KindePageEvent> = ({ context, request }) => {
             {getKindeWidget()}
           </div>
         </main>
-      </div> */}
+      </div>
     </Root>
   );
 };

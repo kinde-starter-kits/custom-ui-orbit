@@ -9,7 +9,6 @@ import {
   type KindePageEvent,
 } from "@kinde/infrastructure";
 import React from "react";
-
 interface RootProps extends KindePageEvent {
   children: React.ReactNode;
 }
@@ -19,9 +18,6 @@ export const Root = ({
   context,
   request,
 }: RootProps): React.JSX.Element => {
-  // const cssPath = path.resolve("./src/styles.css");
-  // const css = fs.readFileSync(cssPath, "utf8");
-  const css = "hi";
   return (
     <html dir={request.locale.isRtl ? "rtl" : "ltr"} lang={request.locale.lang}>
       <head>
@@ -40,17 +36,9 @@ export const Root = ({
         <meta content="nopagereadaloud" name="google" />
         <title>{context.widget.content.page_title}</title>
 
-        <style>{css}</style>
-
         <link href={getSVGFaviconUrl()} rel="icon" type="image/svg+xml" />
         {getKindeRequiredCSS()}
         {getKindeRequiredJS()}
-
-        <link
-          href="https://asset.kindedemo.com/runlikehell/styles.8394861289.css"
-          nonce={getKindeNonce()}
-          rel="stylesheet"
-        />
       </head>
 
       <body>
