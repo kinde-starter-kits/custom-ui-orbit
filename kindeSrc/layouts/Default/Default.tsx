@@ -1,9 +1,12 @@
 "use server";
 
+import { HeaderImage } from "../../components/HeaderImage/HeaderImage";
+import { Footer } from "../../components/Footer//Footer";
 import React from "react";
 
 type DefaultLayoutProps = {
   children: React.ReactNode;
+  isRegisterPage?: boolean;
 };
 
 const styles: {
@@ -21,10 +24,13 @@ const styles: {
 
 export const DefaultLayout = ({
   children,
+  isRegisterPage = false,
 }: DefaultLayoutProps): React.JSX.Element => (
   <div>
     <main style={styles.container} id="main">
+      <HeaderImage />
       {children}
+      <Footer isRegisterPage={isRegisterPage} />
     </main>
   </div>
 );
