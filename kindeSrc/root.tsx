@@ -22,13 +22,6 @@ export const Root = ({
   return (
     <html dir={request.locale.isRtl ? "rtl" : "ltr"} lang={request.locale.lang}>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.documentElement.classList.add('kinde-is-js-enabled');`,
-          }}
-          nonce={getKindeNonce()}
-        />
-
         <meta charSet="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="noindex" name="robots" />
